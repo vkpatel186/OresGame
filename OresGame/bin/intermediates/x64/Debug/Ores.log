@@ -1,0 +1,52 @@
+﻿D:\Program_Files\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (D:\Vikas\MiniClip\OresGame\bin\intermediates\x64\Debug\) contains files shared from another project (BirchEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  CanvasImage.cpp
+  ComponentManager.cpp
+  ProgressTexture.cpp
+  Ores.cpp
+D:\Vikas\MiniClip\OresGame\Ores\Src\Ores.cpp(63,39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  OresGame.cpp
+  main.cpp
+D:\Vikas\MiniClip\OresGame\Ores\Src\main.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  TextureManager.cpp
+  Tiles.cpp
+  TileManager.cpp
+D:\Vikas\MiniClip\OresGame\Ores\Src\TileManager.cpp(134,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Vikas\MiniClip\OresGame\Ores\Src\TileManager.cpp(135,36): warning C4018: '<': signed/unsigned mismatch
+D:\Vikas\MiniClip\OresGame\Ores\Src\TileManager.cpp(159,28): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\Vikas\MiniClip\OresGame\Ores\Src\TileManager.cpp(183,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\Vikas\MiniClip\OresGame\Ores\Src\TileManager.cpp(189,67): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Text.cpp
+  Generating Code...
+CanvasImage.obj : error LNK2019: unresolved external symbol SDL_RenderCopy referenced in function "public: virtual void __cdecl CanvasImage::render(void)" (?render@CanvasImage@@UEAAXXZ)
+ProgressTexture.obj : error LNK2001: unresolved external symbol SDL_RenderCopy
+Text.obj : error LNK2001: unresolved external symbol SDL_RenderCopy
+CanvasImage.obj : error LNK2019: unresolved external symbol SDL_DestroyTexture referenced in function "public: void __cdecl CanvasImage::updateImage(char const *)" (?updateImage@CanvasImage@@QEAAXPEBD@Z)
+Text.obj : error LNK2001: unresolved external symbol SDL_DestroyTexture
+Ores.obj : error LNK2019: unresolved external symbol SDL_GetTicks referenced in function "private: void __cdecl Ores::updateProgressBar(void)" (?updateProgressBar@Ores@@AEAAXXZ)
+main.obj : error LNK2001: unresolved external symbol SDL_GetTicks
+OresGame.obj : error LNK2019: unresolved external symbol SDL_CreateWindow referenced in function "public: void __cdecl OresGame::init(char const *,int,int,int,int,bool)" (?init@OresGame@@QEAAXPEBDHHHH_N@Z)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_DestroyWindow referenced in function "public: void __cdecl OresGame::clean(void)" (?clean@OresGame@@QEAAXXZ)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_PollEvent referenced in function "public: virtual void __cdecl OresGame::handleEvent(void)" (?handleEvent@OresGame@@UEAAXXZ)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_CreateRenderer referenced in function "public: void __cdecl OresGame::init(char const *,int,int,int,int,bool)" (?init@OresGame@@QEAAXPEBDHHHH_N@Z)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_SetRenderDrawColor referenced in function "public: virtual void __cdecl OresGame::update(void)" (?update@OresGame@@UEAAXXZ)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_DestroyRenderer referenced in function "public: void __cdecl OresGame::clean(void)" (?clean@OresGame@@QEAAXXZ)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_Init referenced in function "public: void __cdecl OresGame::init(char const *,int,int,int,int,bool)" (?init@OresGame@@QEAAXPEBDHHHH_N@Z)
+OresGame.obj : error LNK2019: unresolved external symbol SDL_Quit referenced in function "public: void __cdecl OresGame::clean(void)" (?clean@OresGame@@QEAAXXZ)
+OresGame.obj : error LNK2019: unresolved external symbol TTF_Init referenced in function "public: void __cdecl OresGame::init(char const *,int,int,int,int,bool)" (?init@OresGame@@QEAAXPEBDHHHH_N@Z)
+main.obj : error LNK2019: unresolved external symbol SDL_RenderClear referenced in function SDL_main
+main.obj : error LNK2019: unresolved external symbol SDL_RenderPresent referenced in function SDL_main
+main.obj : error LNK2019: unresolved external symbol SDL_Delay referenced in function SDL_main
+TextureManager.obj : error LNK2019: unresolved external symbol SDL_FreeSurface referenced in function "public: static struct SDL_Texture * __cdecl TextureManager::LoadTexture(char const *)" (?LoadTexture@TextureManager@@SAPEAUSDL_Texture@@PEBD@Z)
+Text.obj : error LNK2001: unresolved external symbol SDL_FreeSurface
+TextureManager.obj : error LNK2019: unresolved external symbol SDL_CreateTextureFromSurface referenced in function "public: static struct SDL_Texture * __cdecl TextureManager::LoadTexture(char const *)" (?LoadTexture@TextureManager@@SAPEAUSDL_Texture@@PEBD@Z)
+Text.obj : error LNK2001: unresolved external symbol SDL_CreateTextureFromSurface
+TextureManager.obj : error LNK2019: unresolved external symbol IMG_Load referenced in function "public: static struct SDL_Texture * __cdecl TextureManager::LoadTexture(char const *)" (?LoadTexture@TextureManager@@SAPEAUSDL_Texture@@PEBD@Z)
+Text.obj : error LNK2019: unresolved external symbol SDL_GetError referenced in function "private: struct SDL_Texture * __cdecl Text::loadTexture(struct SDL_Color,char const *,struct Font)" (?loadTexture@Text@@AEAAPEAUSDL_Texture@@USDL_Color@@PEBDUFont@@@Z)
+Text.obj : error LNK2019: unresolved external symbol TTF_OpenFont referenced in function "private: struct SDL_Texture * __cdecl Text::loadTexture(struct SDL_Color,char const *,struct Font)" (?loadTexture@Text@@AEAAPEAUSDL_Texture@@USDL_Color@@PEBDUFont@@@Z)
+Text.obj : error LNK2019: unresolved external symbol TTF_RenderText_Solid referenced in function "private: struct SDL_Texture * __cdecl Text::loadTexture(struct SDL_Color,char const *,struct Font)" (?loadTexture@Text@@AEAAPEAUSDL_Texture@@USDL_Color@@PEBDUFont@@@Z)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Dev\SDL2\lib\x86\SDL2.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Dev\SDL2\lib\x86\SDL2main.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Dev\SDL2_image\lib\x86\SDL2_image.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Dev\SDL2_ttf-2.0.15\lib\x86\SDL2_ttf.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+D:\Vikas\MiniClip\OresGame\bin\x64\Debug\Ores.exe : fatal error LNK1120: 22 unresolved externals
