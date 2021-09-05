@@ -20,7 +20,7 @@ public:
     void updatePosition(int x,int y);
 
 private:
-    SDL_Texture* loadTexture(SDL_Color color, const char* text, Font fontDetails);
+    void loadTexture(SDL_Color color, const char* text, Font fontDetails);
     Font _fontDetail;
     SDL_Rect _textRect;
     SDL_Color _color;

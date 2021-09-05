@@ -1,5 +1,9 @@
 #include "CanvasImage.h"
 
+CanvasImage::~CanvasImage()
+{
+    //if(_image)
+}
 void CanvasImage::init(const char* asset, SDL_Rect data, bool enabled, std::function<void(void)> callback)
 {
     _image = TextureManager::LoadTexture(asset);

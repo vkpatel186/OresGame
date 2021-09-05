@@ -11,6 +11,7 @@ class CanvasImage : public Component
 {
     
 public:
+    ~CanvasImage();
     void init(const char* asset, SDL_Rect data,bool enabled,std::function<void(void)> callback);
     void updateImage(const char* asset);
     void updatePosition(int x, int y);

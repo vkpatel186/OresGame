@@ -11,7 +11,7 @@ void Tiles::init(const char* asset, int index, int h, int w, int x, int y)
     _destX = x;
     _destY = y;
     _imageIndex = index;
-    _animationSpeed  = w/10;
+    _animationSpeed  = 5;
 }
 
 void Tiles::updateTileImageAndIndex(const char* asset, int index)
@@ -32,16 +32,25 @@ void Tiles::update()
 {
     isAnimationRunning = false;
     auto pos = _tile->getImageData();
-    if (_destX != pos.x)
-    {
 
+    if (std::abs(_destX - pos.x) > _animationSpeed)
+    {
         _destX > pos.x ? pos.x+= _animationSpeed : pos.x-= _animationSpeed;
         isAnimationRunning = true;
     }
-    if (_destY != pos.y)
+    else
+    {
+         pos.x = _destX;
+    }
+
+    if (std::abs(_destY - pos.y) > _animationSpeed)
     {
         _destY > pos.y ? pos.y+= _animationSpeed : pos.y-= _animationSpeed;
         isAnimationRunning = true;
+    }
+    else
+    {
+        pos.y = _destY;
     }
     _tile->updatePosition(pos.x, pos.y);
 }
