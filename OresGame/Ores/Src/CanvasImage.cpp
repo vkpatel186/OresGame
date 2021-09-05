@@ -2,7 +2,7 @@
 
 CanvasImage::~CanvasImage()
 {
-    //if(_image)
+    SDL_DestroyTexture(_image);
 }
 void CanvasImage::init(const char* asset, SDL_Rect data, bool enabled, std::function<void(void)> callback)
 {
